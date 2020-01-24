@@ -4,13 +4,13 @@ import {SIGN_IN_PATH} from "../../1-main/main-1-ui/Routes";
 import {Redirect} from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
 import {getMe} from "../profile-2-bll/profileThunks";
-import {getCookie, setCookie} from "../../5-helpers/cookies/cookies";
+import {getCookie, setCookie} from "../../7-helpers/cookies/cookies";
 import {IAppStore} from '../../1-main/main-2-bll/store';
 import {profileSetName} from '../profile-2-bll/profileActions';
 
 const ProfileContainer: React.FC = () => {
     const [redirect, setRedirect] = useState(false);
-    const name = useSelector((store: IAppStore) => store.neko.name);
+    const name = useSelector((store: IAppStore) => store.profile.name);
     const dispatch = useDispatch();
 
     useEffect(() => {

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
-import {FORGOT_PATH, PROFILE_PATH, REGISTER_PATH, SIGN_IN_PATH} from './Routes';
+import {COLOR_PATH, DATE_PATH, FORGOT_PATH, PROFILE_PATH, REGISTER_PATH, SIGN_IN_PATH} from './Routes';
 
 const Header: React.FC = () => {
     const [show, setShow] = useState(false);
@@ -20,6 +20,8 @@ const Header: React.FC = () => {
             {show && <NavLink to={REGISTER_PATH}>register</NavLink>}
             {show && <NavLink to={FORGOT_PATH}>forgot</NavLink>}
             {show && <NavLink to={PROFILE_PATH}>profile</NavLink>}
+            {show && <NavLink to={DATE_PATH}>date</NavLink>}
+            {show && <NavLink to={COLOR_PATH}>color</NavLink>}
         </div>
     );
 };

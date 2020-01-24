@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import SignIn from "./SignIn";
 import {useDispatch, useSelector} from "react-redux";
-import {IAppStore} from "../../1-main/main-2-bll/store";
+import {IAppStore} from "../../../1-main/main-2-bll/store";
 import {loginThunk} from "../sign-in-2-bll/signInThunks";
 import {Redirect} from 'react-router-dom';
-import {PROFILE_PATH} from "../../1-main/main-1-ui/Routes";
-import Preloader from "../../5-helpers/Preloader/Preloader";
-import {loginValidate} from "../../5-helpers/validators/validator";
+import {PROFILE_PATH} from "../../../1-main/main-1-ui/Routes";
+import Preloader from "../../../7-helpers/Preloader/Preloader";
+import {loginValidate} from "../../../7-helpers/validators/validator";
 
 interface SignInContainerIProps {
 

@@ -1,5 +1,5 @@
 import {ThunkAction, ThunkDispatch} from "redux-thunk";
-import {IAppStore} from "../../1-main/main-2-bll/store";
+import {IAppStore} from "../../../1-main/main-2-bll/store";
 import {forgotMailError, IForgotActions} from "./forgotActions";
 import {ForgotAPI} from "../forgot-3-dal/ForgotAPI";
 

@@ -1,8 +1,8 @@
 import {ThunkAction, ThunkDispatch} from "redux-thunk";
 import {IAppStore} from "../../1-main/main-2-bll/store";
 import {IProfileActions, profileSetName} from "./profileActions";
-import {ISignInActions} from "../../2-sign-in/sign-in-2-bll/signInActions";
-import { getCookie, setCookie } from "../../5-helpers/cookies/cookies";
+import {ISignInActions} from "../../2-authorization/2-sign-in/sign-in-2-bll/signInActions";
+import { getCookie, setCookie } from "../../7-helpers/cookies/cookies";
 import {ProfileAPI} from "../profile-3-dal/ProfileAPI";
 
 type Return = void;

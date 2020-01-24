@@ -1,5 +1,5 @@
 import {ThunkAction, ThunkDispatch} from "redux-thunk";
-import {IAppStore} from "../../1-main/main-2-bll/store";
+import {IAppStore} from "../../../1-main/main-2-bll/store";
 import {IRegisterActions, registerError, registerUserData, toogleIsFetching} from "./registerActions";
 import {RegisterAPI} from "../register-3-dal/RegisterAPI";
 

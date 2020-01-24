@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './sign-in-1-ui-styles/SignIn.module.css'
-import Preloader from "../../5-helpers/Preloader/Preloader";
+import Preloader from "../../../7-helpers/Preloader/Preloader";
 
 interface SignInProps {
     email: string

@@ -3,10 +3,10 @@ import Register from './Register';
 import {Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {register} from "../register-2-bll/registerThunks";
-import {IAppStore} from "../../1-main/main-2-bll/store";
-import {SIGN_IN_PATH} from '../../1-main/main-1-ui/Routes';
-import Preloader from "../../5-helpers/Preloader/Preloader";
-import {registerValidate} from "../../5-helpers/validators/validator";
+import {IAppStore} from "../../../1-main/main-2-bll/store";
+import {SIGN_IN_PATH} from '../../../1-main/main-1-ui/Routes';
+import Preloader from "../../../7-helpers/Preloader/Preloader";
+import {registerValidate} from "../../../7-helpers/validators/validator";
 import {registerError} from "../register-2-bll/registerActions";
 
 interface IPropsRegister {

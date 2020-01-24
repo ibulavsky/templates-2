@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import Forgot from './Forgot';
-import {IAppStore} from "../../1-main/main-2-bll/store";
+import {IAppStore} from "../../../1-main/main-2-bll/store";
 import {connect} from "react-redux";
-import {emailValidate} from "../../5-helpers/validators/validator";
+import {emailValidate} from "../../../7-helpers/validators/validator";
 import {forgotMailError} from "../forgot-2-bll/forgotActions";
 import {forgot} from "../forgot-2-bll/forgotThunks";
 

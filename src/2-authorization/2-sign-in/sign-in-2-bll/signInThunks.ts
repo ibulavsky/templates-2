@@ -1,9 +1,9 @@
 import {ThunkAction, ThunkDispatch} from "redux-thunk";
-import {IAppStore} from "../../1-main/main-2-bll/store";
+import {IAppStore} from "../../../1-main/main-2-bll/store";
 import {ISignInActions, loginError, loginSuccess, toogleIsFetching} from "./signInActions";
 import {localStorageAPI, SignInAPI} from "../sign-in-3-dal/SignInAPI";
-import {setCookie} from "../../5-helpers/cookies/cookies";
-import {passwordCoding} from "../../5-helpers/passwordCoding";
+import {setCookie} from "../../../7-helpers/cookies/cookies";
+import {passwordCoding} from "../../../7-helpers/passwordCoding";
 
 type Return = void;
 type ExtraArgument = {};

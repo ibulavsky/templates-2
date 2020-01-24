@@ -1,9 +1,11 @@
 import React from 'react';
 import {Redirect, Route} from "react-router-dom";
-import SignInPage from '../../2-sign-in/sign-in-1-ui/SignInPage';
-import RegisterPage from '../../3-register/register-1-ui/RegisterPage';
-import ForgotPage from '../../4-forgot/forgot-1-ui/ForgotPage';
+import SignInPage from '../../2-authorization/2-sign-in/sign-in-1-ui/SignInPage';
+import RegisterPage from '../../2-authorization/3-register/register-1-ui/RegisterPage';
+import ForgotPage from '../../2-authorization/4-forgot/forgot-1-ui/ForgotPage';
 import ProfilePage from "../../6-profile/profile-1-ui/ProfilePage";
+import DatePage from '../../4-date/date-1-ui/DatePage';
+import ColorPage from "../../5-color/color-1-ui/ColorPage";
 
 export const START_GH_PAGES_PATH = '/neko-login-register-forgot';
 export const SIGN_IN_PATH = START_GH_PAGES_PATH + '/sign-in';
@@ -22,8 +24,8 @@ const Routes: React.FC = () => {
             <Route path={REGISTER_PATH} render={() => <RegisterPage/>}/>
             <Route path={FORGOT_PATH} render={() => <ForgotPage/>}/>
             {/*<Route path={MODAL_PATH} render={() => <ModalPage/>}/>*/}
-            {/*<Route path={DATE_PATH} render={() => <DatePage/>}/>*/}
-            {/*<Route path={COLOR_PATH} render={() => <ColorPage/>}/>*/}
+            <Route path={DATE_PATH} render={() => <DatePage/>}/>
+            <Route path={COLOR_PATH} render={() => <ColorPage/>}/>
             <Route path={PROFILE_PATH} render={() => <ProfilePage/>}/>
         </div>
     );
