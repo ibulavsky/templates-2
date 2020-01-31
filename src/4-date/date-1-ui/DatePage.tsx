@@ -1,9 +1,11 @@
 import React from 'react';
+import DateContainer from "./DateContainer";
 
 const DatePage: React.FC = () => {
-    return ( <div>
-            DatePage
-        </div>
+    return (
+        <>
+            <DateContainer/>
+        </>
     );
 };
 
