@@ -6,12 +6,14 @@ import ForgotPage from '../../2-authorization/4-forgot/forgot-1-ui/ForgotPage';
 import ProfilePage from "../../6-profile/profile-1-ui/ProfilePage";
 import DatePage from '../../4-date/date-1-ui/DatePage';
 import ColorPage from "../../5-color/color-1-ui/ColorPage";
+import ShopPage from "../../8-shop/shop-1-common/ShopPage";
 
 export const START_GH_PAGES_PATH = '/neko-login-register-forgot';
 export const SIGN_IN_PATH = START_GH_PAGES_PATH + '/sign-in';
 export const REGISTER_PATH = START_GH_PAGES_PATH + '/register';
 export const FORGOT_PATH = START_GH_PAGES_PATH + '/forgot';
 export const PROFILE_PATH = START_GH_PAGES_PATH + '/profile';
+export const SHOP_PATH = START_GH_PAGES_PATH + '/shop';
 export const MODAL_PATH = START_GH_PAGES_PATH + '/modal';
 export const DATE_PATH = START_GH_PAGES_PATH + '/date';
 export const COLOR_PATH = START_GH_PAGES_PATH + '/color';
@@ -27,6 +29,7 @@ const Routes: React.FC = () => {
             <Route path={DATE_PATH} render={() => <DatePage/>}/>
             <Route path={COLOR_PATH} render={() => <ColorPage/>}/>
             <Route path={PROFILE_PATH} render={() => <ProfilePage/>}/>
+            <Route path={SHOP_PATH} render={() => <ShopPage/>}/>
         </div>
     );
 };
