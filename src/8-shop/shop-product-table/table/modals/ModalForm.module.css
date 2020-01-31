@@ -1,0 +1,21 @@
+.blackout {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.1;
+}
+
+.form {
+    position: fixed;
+    display: flex;
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background-color: gray;
+}
