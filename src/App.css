@@ -2,6 +2,14 @@
     text-align: center;
 }
 
+.columnPrice {
+    width: 100px;
+}
+
+.columnName {
+    width: 300px;
+}
+
 .TimePicker {
     width: 100px;
 }

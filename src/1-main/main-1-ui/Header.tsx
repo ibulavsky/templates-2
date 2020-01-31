@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             {show && <NavLink to={PROFILE_PATH}>profile</NavLink>}
             {show && <NavLink to={DATE_PATH}>date</NavLink>}
             {show && <NavLink to={COLOR_PATH}>color</NavLink>}
-            {show && <NavLink to={MODAL_PATH}>modal</NavLink>}
+            {/*{show && <NavLink to={MODAL_PATH}>modal</NavLink>}*/}
             {show && <NavLink to={SHOP_PATH}>shop</NavLink>}
         </div>
     );

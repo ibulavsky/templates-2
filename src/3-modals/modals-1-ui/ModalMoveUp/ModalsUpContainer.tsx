@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import ModalMessage from "./../ModalMessage/ModalMessage";
+// import ModalMessage from "./../ModalMessage/ModalMessage";
 
 interface IModalMessage {
     show: boolean,
