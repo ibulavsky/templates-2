@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 // import Table from "./table/Table";
 import {useDispatch, useSelector} from "react-redux";
-import {IAppStore} from "../../1-main/main-2-bll/store";
-import {addProduct, getShop, updateProduct, deleteProduct} from "../shop-2-bll/shopThunks";
-import AddedProductModal from "./table/modals/AddedForm";
-import ProductDeleteModal from "./table/modals/QuestionForm";
-import UpdateProductModal from "./table/modals/UpdatedForm";
+import {IAppStore} from "../../../1-main/main-2-bll/store";
+import {addProduct, getShop, updateProduct, deleteProduct} from "../../shop-2-bll/shopThunks";
+import AddedProductModal from "../../oldPages/shop-product-table/table/modals/AddedForm";
+import ProductDeleteModal from "../../oldPages/shop-product-table/table/modals/QuestionForm";
+import UpdateProductModal from "../../oldPages/shop-product-table/table/modals/UpdatedForm";
 import {Table, Button} from "antd";
-import '../../App.css';
+import '../../../App.css';
 import {IShopProduct} from "../shop-2-bll/shopInitialState";
 
-const ShopProductPage: React.FC = () => {
+const AntShopProductPage: React.FC = () => {
 
     const productsData = useSelector((store: IAppStore) => store.shop.data.products);
 
@@ -150,4 +150,4 @@ const ShopProductPage: React.FC = () => {
     )
 };
 
-export default ShopProductPage;
+export default AntShopProductPage;

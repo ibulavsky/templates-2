@@ -1,8 +1,8 @@
 import React from 'react';
 import Paginator from "../shop-paginator/Paginator";
 import {useDispatch, useSelector} from 'react-redux';
-import {IAppStore} from "../../1-main/main-2-bll/store";
-import {getShop} from "../shop-2-bll/shopThunks";
+import {IAppStore} from "../../../1-main/main-2-bll/store";
+import {getShop} from "../../shop-2-bll/shopThunks";
 
 
 const ShopSelectedPage: React.FC = () => {

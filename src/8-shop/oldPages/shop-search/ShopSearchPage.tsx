@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {Range, getTrackBackground} from 'react-range';
 import {useDispatch, useSelector} from "react-redux";
-import {getShop} from '../shop-2-bll/shopThunks';
-import {IAppStore} from "../../1-main/main-2-bll/store";
-import { searchProductData } from '../shop-2-bll/shopActions';
+import {getShop} from '../../shop-2-bll/shopThunks';
+import {IAppStore} from "../../../1-main/main-2-bll/store";
+import { searchProductData } from '../../shop-2-bll/shopActions';
 
 
 const ShopSearchPage: React.FC = () => {

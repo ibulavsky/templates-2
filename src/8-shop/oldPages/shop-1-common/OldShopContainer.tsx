@@ -1,22 +1,22 @@
 import React from 'react';
 import ShopSearchPage from "../shop-search/ShopSearchPage";
-import ShopProductPage from "../shop-product-table/ShopProductPage";
 import ShopSelectedPage from "../shop-page/ShopSelectedPage";
+import OldShopProductPage from "../shop-product-table/OldShopProductPage";
 
 
 interface IPropsShopConatiner {
 }
 
-const ShopContainer: React.FC<IPropsShopConatiner> = () => {
+const OldShopContainer: React.FC<IPropsShopConatiner> = () => {
 
     return (
         <>
             <ShopSearchPage/>
-            <ShopProductPage/>
+            <OldShopProductPage/>
             <ShopSelectedPage/>
         </>
     );
 };
 
 
-export default ShopContainer;
+export default OldShopContainer;

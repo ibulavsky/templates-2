@@ -2,6 +2,7 @@ import {ThunkAction, ThunkDispatch} from "redux-thunk";
 import {IAppStore} from "../../../1-main/main-2-bll/store";
 import {IRegisterActions, registerError, registerUserData, toogleIsFetching} from "./registerActions";
 import {RegisterAPI} from "../register-3-dal/RegisterAPI";
+import {passwordCoding} from "../../../7-helpers/passwordCoding";
 
 type Return = void;
 type ExtraArgument = {};
@@ -11,7 +12,7 @@ export const register = (email: string, passwordFirst: string): ThunkAction<Retu
     async (dispatch: ThunkDispatch<IAppStore, ExtraArgument, IRegisterActions>, getStore: IGetStore) => {
         try {
             dispatch(toogleIsFetching(true));
-            const response = await RegisterAPI.getSuccessRegister(email, passwordFirst);
+            const response = await RegisterAPI.getSuccessRegister(email, passwordCoding(passwordFirst));
             dispatch(toogleIsFetching(false));
             if (response.data.success) {
                 dispatch(registerUserData(response.data.success));
